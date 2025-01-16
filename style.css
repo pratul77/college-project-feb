@@ -1,0 +1,282 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #87CEEB, #f4e695, #00bfff, #f0f8ff);
+    background-size: 400% 400%; /* Smooth scrolling for gradient */
+    background-attachment: fixed;
+    animation: animated-gradient 5s ease-in-out infinite; /* Slightly slower animation for a more calming effect */
+    font-family: 'Arial, sans-serif';
+}
+
+/* Keyframes for Animated Gradient */
+@keyframes animated-gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+/* Styling for WeatherWise20 Text */
+h1 {
+    font-size: 4rem; /* Adjust the size as needed */
+    font-weight: bold;
+    
+    text-align: center;
+    background: linear-gradient(90deg, #fafafb, #00ff00, #47cbff, #fff);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rgb-gradient 5s infinite;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Keyframes for RGB Gradient Animation */
+  @keyframes rgb-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+/* Header Styles */
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #0073e6, #003d99, #00ccff, #001f4d);
+    background-size: 300% 300%; /* Creates the space for the animation */
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    animation: animated-gradient 6s infinite; /* Applies the animation */
+}
+
+/* Animation Keyframes */
+@keyframes animated-gradient {
+    0% {
+        background-position: 0% 50%; /* Start position */
+    }
+    50% {
+        background-position: 100% 50%; /* Middle position */
+    }
+    100% {
+        background-position: 0% 50%; /* Loop back to start */
+    }
+}
+
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Main Section */
+.main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #0073e6;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-button {
+    background: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.search-button:hover {
+    background: #005bb5;
+}
+
+/* Weather Section */
+.weather-section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.current-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.weather-info {
+    font-size: 2rem;
+}
+
+.weather-alert {
+    font-size: 2rem;
+    font-weight: bold;
+    color: red;
+}
+
+/* Forecast Section */
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.forecast-item {
+    background: #87CEEB ;
+    border: 1px solid #2711ee;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-item h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Map Section */
+.map-section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#mapContainer {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.map-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.map-button {
+    padding: 10px 20px;
+    border: none;
+    background: #0073e6;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.map-button:hover {
+    background: #005bb5;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #0073e6;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+}
+
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.current-weather {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread elements evenly across the bar */
+    position: relative;
+    padding: 10px;
+}
+
+.current-weather .weather-icon {
+    width: 100px; /* Adjust size as needed */
+    height: 100px;
+    margin: 0 ; /* Center icon */
+}
+
+.current-weather .weather-details {
+    flex: 1; /* Allow details to take up space */
+    text-align: left; /* Align details to the left */
+}
+
+.current-weather .alert-text {
+    flex: 1;
+    text-align: right; /* Align alerts to the right */
+    color: green; /* Optional styling */
+}
+
+.weather-alert{
+    align-items: end;
+}
